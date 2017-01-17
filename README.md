@@ -17,3 +17,11 @@ The Node.js Starter demonstrates a simple, reusable Node.js web application that
 3. Edit the manifest.yml file and replace the <APP_NAME> with a *unique* name (it is best to use your fullname-lab1 for example) and then run `cf push`
 
 You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
+
+# Add Cloudant NoSQL DB service to the application
+
+1. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "Cloudant" in the Bluemix catalog
+
+2. Before creating the service *bind* it to the application you created in the previous step
+
+3. Restage the application if prompt to do so
