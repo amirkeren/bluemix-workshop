@@ -25,3 +25,5 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 2. Before creating the service *bind* it to the application you created in the previous step
 
 3. Restage the application if prompt to do so
+
+4. Click on the newely added Cloudant service then click on Service Credentials and then New Credential. Finally click Add
