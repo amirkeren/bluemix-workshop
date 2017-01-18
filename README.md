@@ -1,6 +1,6 @@
-# Node.js and Cloudant Starter Overview
+# OpenWhisk Starter Overview
 
-The Node.js Starter demonstrates a simple, reusable Node.js web application that works with Cloudant NoSQL DB.
+The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 # Preparation
 
@@ -10,7 +10,7 @@ The Node.js Starter demonstrates a simple, reusable Node.js web application that
 
 3. Login to Bluemix with your username and password using the command - `bluemix login -a https://api.ng.bluemix.net`
 
-# Deploy the app on Bluemix
+# Deploy the CloudFoundry application on Bluemix
 
 1. Clone this repository or by running `git clone https://github.com/amirkeren/workshop-prep.git` (if you have git installed) or download it as a zip file from [here](https://github.com/amirkeren/workshop-prep/archive/master.zip)
 
