@@ -12,7 +12,7 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 # Deploy the CloudFoundry application on Bluemix
 
-1. Clone this repository by running `git clone https://github.com/amirkeren/workshop-prep.git` (if you have git installed) or download it as a zip file from [here](https://github.com/amirkeren/workshop-prep/archive/master.zip)
+1. Clone this repository by running `git clone https://github.com/amirkeren/workshop-prep.git` (if you have [git](https://git-scm.com/downloads) installed) or download it as a zip file from [here](https://github.com/amirkeren/workshop-prep/archive/master.zip)
 
 2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
 
