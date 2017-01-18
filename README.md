@@ -16,7 +16,7 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
 
-3. Edit the manifest.yml file and replace *APP_NAME* with a **unique** name (it is best to use your fullname-lab1 for example) and then run `cf push`
+3. Edit the manifest.yml file and replace *APP_NAME* with a **unique** name (it is best to use your fullname-workshop for example) and then run `cf push`
 
 You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
 
@@ -58,7 +58,7 @@ function main(params) {
 
 1. Go to the [monitor screen](https://console.ng.bluemix.net/openwhisk/dashboard) and note the Activity Log on the right
 
-2. Go to the web applicaton you created in the [previous lab](https://github.com/amirkeren/bluemix-lab1) and proceed to add a new student
+2. Go to the web applicaton you deployed earlier and proceed to add a new student
 
 3. Refresh the Activity Log and you should see the action was triggered due to the change in the "students" DB
 
