@@ -16,7 +16,7 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
 
-3. Edit the manifest.yml file and replace the <APP_NAME> with a *unique* name (it is best to use your fullname-lab1 for example) and then run `cf push`
+3. Edit the manifest.yml file and replace *APP_NAME* with a **unique** name (it is best to use your fullname-lab1 for example) and then run `cf push`
 
 You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
 
