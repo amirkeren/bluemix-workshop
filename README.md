@@ -13,7 +13,9 @@ The Node.js Starter demonstrates a simple, reusable Node.js web application that
 # Deploy the app on Bluemix
 
 1. Clone this repository or by running `git clone https://github.com/amirkeren/workshop-prep.git` (if you have git installed) or download it as a zip file from [here](https://github.com/amirkeren/workshop-prep/archive/master.zip)
+
 2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
+
 3. Edit the manifest.yml file and replace the <APP_NAME> with a *unique* name (it is best to use your fullname-lab1 for example) and then run `cf push`
 
 You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
@@ -26,4 +28,40 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 
 3. Restage the application if prompt to do so
 
-4. Click on the newely added Cloudant service then click on Service Credentials and then New Credential. Finally click Add
+4. Click on the newely added Cloudant service then click on "Service Credentials" and then "New Credential". Finally click "Add"
+
+#Creating the action
+
+1. Go to the [OpenWhisk editor](https://console.ng.bluemix.net/openwhisk/editor) and create a new action (use the default settings) with any name of your choosing
+
+2. Replace the main function with the one below -
+
+```
+function main(params) {
+	return { student_added: params['id'] };
+}
+```
+
+#Creating the trigger
+
+1. Select the action you created in the previous step on the left and then click on "Automate this Action"
+
+2. Choose "Cloudant Changes" and then click on the green "New Trigger"
+
+3. Provide a name for the trigger and proceed to select the instance of the Cloudant you created earlier (note that it selected the "students" dbname by default since that is the only one available)
+
+4. Click on "Save Configuration" and "Next"
+
+5. Finally, click on the "This Looks Good" button and "Save Rule" (you can change the rule name if you like)
+
+#Testing the trigger
+
+1. Go to the [monitor screen](https://console.ng.bluemix.net/openwhisk/dashboard) and note the Activity Log on the right
+
+2. Go to the web applicaton you created in the [previous lab](https://github.com/amirkeren/bluemix-lab1) and proceed to add a new student
+
+3. Refresh the Activity Log and you should see the action was triggered due to the change in the "students" DB
+
+#Creating the sequence
+
+1. TODO
