@@ -80,23 +80,38 @@ Note that the changes are auto-saved but not live. In order to publish them you 
 
 Finally, click on "Run with this Value" and you should see the translated *Bonjour* response
 
+# Adding the DB insertion helper action
+
+1. Create yet another new action, same as before and replace the main function with the one below - 
+
+```
+function main(params) {
+	return { doc: { _id: params.payload } };
+}
+```
+
+# Extending the sequence
+
+1. Select the sequence you created in the previous step again and then click on "Extend"
+
+2. Select "My Actions" and choose the action you had just created and click "Add to Sequence"
+
+3. Click on "Extend" again, but this time choose "Cloudant"
+
+4. From the many available options, choose "create document" and proceed to add a new binding by clicking the Green "New Binding" button on the bottom left
+
+5. Provide a name for the binding and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"translation"** DB
+
+6. To finish, click on "Save Configuration", followed by "Add to Sequence" and then on "Save Your Changes"
+
 # Creating the trigger
 
-1. Select the sequence you created in the previous step again and then click on "Automate"
+1. Click on "Automate"
 
 2. Choose "Cloudant Changes" and then click on the Green "New Trigger"
 
-3. Provide a name for the trigger and proceed to select the instance of Cloudant you created earlier (note that it selected the "phrases" dbname by default since that is the only one available)
+3. Provide a name for the trigger and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"phrases"** DB
 
 4. Click on "Save Configuration" and "Next" (note that the new flow now includes the trigger as well)
 
-5. Finally, click on the "This Looks Good" button and "Save Rule" (you can change the rule name if you like)
-
-
-# Testing the whole flow
-
-1. Go to the [monitor screen](https://console.ng.bluemix.net/openwhisk/dashboard) and note the Activity Log on the right
-
-2. Go to the web applicaton you deployed earlier and proceed to add a new phrase
-
-3. Refresh the Activity Log and you should see the entire sequence was triggered due to the change in the "phrases" DB and the translation of the new phrase you added appears as the output
+5. Finally, click on the "This Looks Good" button and "Save Rule" (you can change the rule name if you like) and "Done"
