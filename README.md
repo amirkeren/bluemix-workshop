@@ -24,7 +24,7 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 
 # Add Cloudant NoSQL DB service to the application
 
-1. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "Cloudant" in the Bluemix catalog
+1. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "cloudant" in the Bluemix catalog
 
 2. Before creating the service *bind* it to the application you created in the previous step
 
@@ -50,7 +50,7 @@ function main(params) {
 
 2. Choose "Cloudant Changes" and then click on the Green "New Trigger"
 
-3. Provide a name for the trigger and proceed to select the instance of the Cloudant you created earlier (note that it selected the "phrases" dbname by default since that is the only one available)
+3. Provide a name for the trigger and proceed to select the instance of Cloudant you created earlier (note that it selected the "phrases" dbname by default since that is the only one available)
 
 4. Click on "Save Configuration" and "Next"
 
