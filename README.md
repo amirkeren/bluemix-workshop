@@ -36,7 +36,7 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 
 2. Click on the "Create" button to add the new service
 
-#Creating the action
+# Creating the action
 
 1. Go to the [OpenWhisk editor](https://console.ng.bluemix.net/openwhisk/editor) and create a new action (use the default settings) with any name of your choosing
 
@@ -63,7 +63,7 @@ function main(params) {
 
 # Seeing it in action
 
-1. Select the sequence you created earlier and click on "Run this Sequence"
+1. Select the sequence you just created and click on "Run this Sequence"
 
 2. Provide the following JSON input -
 
