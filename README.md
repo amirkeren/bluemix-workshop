@@ -90,11 +90,13 @@ function main(params) {
 }
 ```
 
+Make a note of the name you chose for the action, we will need it in the next step
+
 # Extending the sequence
 
 1. Select the sequence you created in the previous step again and then click on "Extend"
 
-2. Select "My Actions" and choose the action you had just created and click "Add to Sequence"
+2. Select "My Actions" and choose the name of the action you had just created and click "Add to Sequence"
 
 3. Click on "Extend" again, but this time choose "Cloudant"
 
