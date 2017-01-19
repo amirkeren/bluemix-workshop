@@ -30,6 +30,8 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 
 3. Restage the application if prompt to do so
 
+4. Click on "Service Credentials" then on "New Credential" and finally click "Add" (this will allow OpenWhisk to connect to that DB instance)
+
 # Adding Watson Language Traslator service
 
 1. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog 
