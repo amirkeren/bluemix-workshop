@@ -20,7 +20,7 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 3. Edit the manifest.yml file and replace *APP_NAME* with a **unique** name (it is best to use your fullname-workshop for example) and then run `cf push`
 
-You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps). If the application fails to start, try renaming the application and run `cf push` again
+You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps). If the application fails to start, try renaming your application and run `cf push` again
 
 # Adding Cloudant NoSQL DB service to the application
 
