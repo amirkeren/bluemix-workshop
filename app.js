@@ -104,12 +104,18 @@ else {
   //connect using cloudant npm and URL obtained from previous step
   var cloudant = Cloudant({ url: cloudant_url });
   var dbname = 'phrases';
-  //create database
+  //create databases
+  cloudant.db.create('translations', function(err, data) {
+        if (err)
+          console.log("Database already exists. Error: ", err);
+        else
+          console.log("Created database");
+  });
   cloudant.db.create(dbname, function(err, data) {
         if (err)
-        console.log("Database already exists. Error: ", err);
+          console.log("Database already exists. Error: ", err);
         else
-        console.log("Created database");
+          console.log("Created database");
         db = cloudant.db.use(dbname);
   });
 }
