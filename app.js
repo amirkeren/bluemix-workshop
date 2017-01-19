@@ -77,10 +77,10 @@ app.post('/addPhrase', function(req, res) {
   }
   db.insert({ _id: value }, function(err, data) {
     if (err) {
-      console.log("Document already exists. Error: ", err);
+      console.log('Document already exists');
       res.sendStatus(500);
     } else {
-      console.log("Inserted new document");
+      console.log('Inserted new document');
       res.sendStatus(200);
     }
   });
@@ -105,13 +105,17 @@ else {
   var cloudant = Cloudant({ url: cloudant_url });
   //create databases
   cloudant.db.create('translations', function(err, data) {
-        if (!err)
-          console.log("Created database");
+        if (err)
+          console.log('Database already exists');
+        else
+          console.log('Created database');
   });
   var dbname = 'phrases';
   cloudant.db.create(dbname, function(err, data) {
-        if (!err)
-          console.log("Created database");
+        if (err)
+          console.log('Database already exists');
+        else 
+          console.log('Created database');
         db = cloudant.db.use(dbname);
   });
 }
