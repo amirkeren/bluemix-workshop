@@ -105,16 +105,12 @@ else {
   var cloudant = Cloudant({ url: cloudant_url });
   //create databases
   cloudant.db.create('translations', function(err, data) {
-        if (err)
-          console.log("Database already exists. Error: ", err);
-        else
+        if (!err)
           console.log("Created database");
   });
   var dbname = 'phrases';
   cloudant.db.create(dbname, function(err, data) {
-        if (err)
-          console.log("Database already exists. Error: ", err);
-        else
+        if (!err)
           console.log("Created database");
         db = cloudant.db.use(dbname);
   });
