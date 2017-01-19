@@ -12,7 +12,7 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 4. Login to Bluemix with your username and password by running `bluemix login -a https://api.ng.bluemix.net` in the command prompt
 
-# Deploy the CloudFoundry application on Bluemix
+# Deploying the CloudFoundry application on Bluemix
 
 1. Clone this repository by running `git clone https://github.com/amirkeren/workshop-prep.git` (if you have [git](https://git-scm.com/downloads) installed) or download it as a zip file from [here](https://github.com/amirkeren/workshop-prep/archive/master.zip)
 
@@ -22,7 +22,7 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps). If the application fails to start, try renaming the application and run `cf push` again
 
-# Add Cloudant NoSQL DB service to the application
+# Adding Cloudant NoSQL DB service to the application
 
 1. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "cloudant" in the Bluemix catalog
 
@@ -31,6 +31,12 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 3. Restage the application if prompt to do so
 
 4. Click on the newely added Cloudant service then click on "Service Credentials" and then "New Credential". Finally click "Add"
+
+# Adding Watson Language Traslator service
+
+1. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog 
+
+2. Click on the "Create" button to add the new service
 
 #Creating the action
 
@@ -45,33 +51,7 @@ function main(params) {
 }
 ```
 
-#Creating the trigger
-
-1. Select the action you created in the previous step on the left and then click on "Automate this Action"
-
-2. Choose "Cloudant Changes" and then click on the Green "New Trigger"
-
-3. Provide a name for the trigger and proceed to select the instance of Cloudant you created earlier (note that it selected the "phrases" dbname by default since that is the only one available)
-
-4. Click on "Save Configuration" and "Next"
-
-5. Finally, click on the "This Looks Good" button and "Save Rule" (you can change the rule name if you like)
-
-#Seeing it in action 
-
-1. Go to the [monitor screen](https://console.ng.bluemix.net/openwhisk/dashboard) and note the Activity Log on the right
-
-2. Go to the web applicaton you deployed earlier and proceed to add a new phrase
-
-3. Refresh the Activity Log and you should see the action was triggered due to the change in the "phrases" DB
-
-#Adding Watson into the mix
-
-1. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog 
-
-2. Click on the "Create" button to add the new service
-
-#Creating the sequence
+# Creating the sequence
 
 1. Click on the action you created earlier and then click on "Link into a Sequence"
 
@@ -83,6 +63,37 @@ function main(params) {
 
 5. Finally click on "Save Action Sequence" (you can change the sequence name if you like) to finish creating the sequence
 
-#Testing the whole flow
+# Seeing it in action
 
-1. TODO
+1. Select the sequence you created earlier and click on "Run this Sequence"
+
+2. Provide the following JSON input -
+
+```
+{
+    "id": "Hello"
+}
+```
+
+3. Finally, click on "Run with this Value" and you should see the translated *Bonjour* response
+
+# Creating the trigger
+
+1. Select the action you created in the previous step on the left and then click on "Automate this Action"
+
+2. Choose "Cloudant Changes" and then click on the Green "New Trigger"
+
+3. Provide a name for the trigger and proceed to select the instance of Cloudant you created earlier (note that it selected the "phrases" dbname by default since that is the only one available)
+
+4. Click on "Save Configuration" and "Next"
+
+5. Finally, click on the "This Looks Good" button and "Save Rule" (you can change the rule name if you like)
+
+
+# Testing the whole flow
+
+1. Go to the [monitor screen](https://console.ng.bluemix.net/openwhisk/dashboard) and note the Activity Log on the right
+
+2. Go to the web applicaton you created in the [previous lab](https://github.com/amirkeren/bluemix-lab1) and proceed to add a new phrase
+
+3. Refresh the Activity Log and you should see the entire sequence was triggered due to the change in the "phrases" DB
