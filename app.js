@@ -41,9 +41,9 @@ app.listen(appEnv.port, '0.0.0.0', function() {
 // will hold the database object
 var db;
 
-//endpoint for retrieving all students
-app.get('/getStudents', function(req, res) {
-  var result = 'No Students Found';
+//endpoint for retrieving all phrases
+app.get('/getPhrases', function(req, res) {
+  var result = 'No Phrases Found';
   if (db == null) {
     console.log(DATABASE_ERROR);
     res.send(result);
@@ -62,20 +62,20 @@ app.get('/getStudents', function(req, res) {
   });
 });
 
-//endpoint for adding a new student
-app.post('/addStudent', function(req, res) {
+//endpoint for adding a new phrase
+app.post('/addPhrase', function(req, res) {
   if (db == null) {
     console.log(DATABASE_ERROR);
     res.sendStatus(500);
     return;
   }
-  var name = req.body.name;
-  if (name == null) {
+  var value = req.body.value;
+  if (value == null) {
     console.log(PARAMETER_ERROR);
     res.sendStatus(500);
     return;
   }
-  db.insert({ _id: name }, function(err, data) {
+  db.insert({ _id: value }, function(err, data) {
     if (err) {
       console.log("Document already exists. Error: ", err);
       res.sendStatus(500);
@@ -103,7 +103,7 @@ if (cloudant_url == null)
 else {
   //connect using cloudant npm and URL obtained from previous step
   var cloudant = Cloudant({ url: cloudant_url });
-  var dbname = 'students';
+  var dbname = 'phrases';
   //create database
   cloudant.db.create(dbname, function(err, data) {
         if (err)
