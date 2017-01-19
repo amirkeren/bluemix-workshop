@@ -117,3 +117,11 @@ Make a note of the name you chose for the action, we will need it in the next st
 4. Click on "Save Configuration" and "Next" (note that the new flow now includes the trigger as well)
 
 5. Finally, click on the "This Looks Good" button and "Save Rule" (you can change the rule name if you like) and "Done"
+
+# Testing the whole flow
+
+1. Go to the [monitor screen](https://console.ng.bluemix.net/openwhisk/dashboard) and note the Activity Log on the right
+
+2. Go to the web applicaton you deployed earlier and proceed to add a new phrase
+
+3. Refresh the Activity Log and you should see the entire sequence was triggered due to the change in the "phrases" DB and the translation of the new phrase you added appears as the output
