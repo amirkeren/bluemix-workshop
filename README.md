@@ -47,6 +47,7 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 ```
 function main(params) {
 	//translateTo values can be any one of the supported 62 languages
+	//in this case we use French ("fr") but you can choose any other supported ISO 639-1 codes
 	return { payload: params['id'], translateTo: "fr" };
 }
 ```
