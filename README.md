@@ -4,6 +4,16 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 # Table of contents
 1. [Preparation](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+2. [Deploying the CloudFoundry application on Bluemix](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+3. [Adding Cloudant NoSQL DB service to the application](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+4. [Adding Watson Language Traslator service](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+5. [Creating the translation mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+6. [Creating the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+7. [Seeing it in action](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+8. [Adding the DB insertion mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+9. [Extending the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+10. [Creating the trigger](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+11. [Testing the whole flow](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
 
 # Preparation
 
