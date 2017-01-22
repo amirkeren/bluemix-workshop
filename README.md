@@ -27,7 +27,7 @@ The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
 # Deploying the CloudFoundry application on Bluemix
 
-1. Clone this repository by running `git clone https://github.com/amirkeren/workshop-prep.git` (if you have [git installed](https://git-scm.com/downloads)) or download it as a zip file from [here](https://github.com/amirkeren/workshop-prep/archive/master.zip)
+1. Clone this repository by running `git clone https://github.com/amirkeren/workshop.git` (if you have [git installed](https://git-scm.com/downloads)) or download it as a zip file from [here](https://github.com/amirkeren/workshop/archive/master.zip)
 
 2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
 
@@ -128,7 +128,7 @@ We will now extend the sequence to translator-mediator-action -> watson-translat
 
 3. Click on "Extend" again, but this time choose "Cloudant"
 
-4. From the many available options, choose "create document" and proceed to add a new binding by clicking the Green "New Binding" button on the bottom left
+4. From the many available options, choose "create document" (you can choose to "View Source" if you want to see how the actual document creation works) and proceed to add a new binding by clicking the Green "New Binding" button on the bottom left
 
 5. Provide a name for the binding and proceed to select the instance of Cloudant you created earlier while making sure the dbname selected is the **"translation"** DB
 
