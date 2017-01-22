@@ -2,6 +2,9 @@
 
 The OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities
 
+# Table of contents
+1. [Preparation](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+
 # Preparation
 
 1. [Register](https://console.ng.bluemix.net/registration) for a Bluemix account if you have not done so already
