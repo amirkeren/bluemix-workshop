@@ -61,9 +61,12 @@ This action will transform the incoming message so that the output will be forma
 
 ```
 function main(params) {
-	//translateTo values can be any one of the supported 62 languages
+	var phrase = params['id'];
 	//in this case we use French ("fr") but you can choose any of the other supported ISO 639-1 codes
-	return { payload: params['id'], translateTo: "fr" };
+	//translateTo values can be any one of the supported 62 languages
+	var targetLanguage = "fr";
+	console.log("Phrase to translate is - " + phrase);
+	return { payload: phrase, translateTo: targetLanguage };
 }
 ```
 
