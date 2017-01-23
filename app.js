@@ -57,6 +57,9 @@ app.get('/getPhrases', function(req, res) {
       for (var i = 0; i < data.total_rows; i++) {
         result += '<li>' + data.rows[i].id + '</li>';
       }
+      if (result == '') {
+      	result = 'No Phrases Found';
+      }
     }
     res.send(result);
   });
