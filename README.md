@@ -27,6 +27,8 @@ The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabi
 
 # Deploying the CloudFoundry application on Bluemix
 
+We will now deploy the CloudFoundry Node.js web application so that we will have a UI to work with
+
 1. Clone this repository by running `git clone https://github.com/amirkeren/workshop.git` (if you have [git installed](https://git-scm.com/downloads)) or download it as a zip file from [here](https://github.com/amirkeren/workshop/archive/master.zip)
 
 2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
@@ -37,6 +39,8 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 
 # Adding Cloudant NoSQL DB service to the application
 
+We will now provision a new instance of Cloudant NoSQL DB to be used as the database for our web application
+
 1. Go to the creation page of the Cloudant NoSQL DB service using [this](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/) link or search for "cloudant" in the Bluemix catalog
 
 2. Before creating the service make sure it is *bound* to the application you created in the previous step (do this by verifying that the drop-down box on the left under "Connect to:" has your application name selected)
@@ -46,6 +50,8 @@ You can view your deployed application on your [dashboard](https://console.ng.bl
 4. Click on "Service Credentials" then on "New Credential" and finally click "Add" (this will allow OpenWhisk to connect to that DB instance)
 
 # Adding Watson Language Traslator service
+
+We will now create the Language translation service that will be used to perform the actual translations
 
 1. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog 
 
