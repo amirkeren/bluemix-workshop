@@ -118,11 +118,10 @@ We will now add the action that will transform the incoming message so that the 
 
 ```
 function main(params) {
-	//translateTo values can be any one of the supported 62 languages
-	//in this case we use French ("fr") but you can choose any of the other supported ISO 639-1 codes
-	var phrase = params['id'];
-	console.log("Phrase to translate is - " + phrase);
-	return { payload: phrase, translateTo: "fr" };
+	//this will create a new document with an id value of the translated phrase
+	var translation = params.payload;
+	console.log("Translated phrase is - " + translation);
+	return { doc: { _id: translation } };
 }
 ```
 
