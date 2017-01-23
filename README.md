@@ -47,7 +47,7 @@ We will now provision a new instance of Cloudant NoSQL DB to be used as the data
 
 3. Restage the application if prompt to do so
 
-4. Click on "Service Credentials" then on "New Credential" and finally click "Add" (this will allow OpenWhisk to connect to that DB instance)
+4. Click on "Service Credentials" then on "New Credential" and finally click "Add" (this will later allow OpenWhisk to connect to that DB instance)
 
 # Adding Watson Language Traslator service
 
