@@ -59,7 +59,7 @@ We will now create the Language translation service that will be used to perform
 
 # Creating the translation mediator action
 
-This action will transform the incoming message so that the output will be formatted to the proper input for the Watson Language Translator API
+We will now create the action that will transform the incoming message so that the output will be formatted to the proper input for the Watson Language Translator API
 
 1. Go to the [OpenWhisk editor](https://console.ng.bluemix.net/openwhisk/editor) and create a new action (use the default settings) with any name of your choosing
 
