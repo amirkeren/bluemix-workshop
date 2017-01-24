@@ -108,7 +108,7 @@ Finally, click on "Run with this Value" and you should see the translated *Bonjo
 
 We will now add the action that will transform the incoming message so that the output will be formatted as the Cloudant document to be created
 
-1. Create yet another new action, same as before, provide it with a name and replace the main function with the one below - 
+1. Click on one of the actions on the left under "My Actions" and create yet another new action, same as before, provide it with a name and replace the main function with the one below - 
 
 ```
 function main(params) {
