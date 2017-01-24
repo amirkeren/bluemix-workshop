@@ -27,7 +27,7 @@ We will now deploy the CloudFoundry Node.js web application so that we will have
 
 1. Deploy the CloudFoundry web application using the "Deploy to Bluemix" button below (you'll first need to sign in to Jazz Hub and choose an alias)
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/amirkeren/workshop.git)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/amirkeren/bluemix-workshop.git)
 
 Once deployment is finished, you can view your deployed application by clicking on "View Your App" or see it on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
 
