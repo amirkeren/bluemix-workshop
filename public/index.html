@@ -25,9 +25,10 @@
         $.post('/addPhrase', { value: phrase })
           .done(function(data) {
             getPhrases();
+            $('#phrase').val('');
           })
           .fail(function(xhr, status, error) {
-            alert('Failed to add phrase, is endpoint implemented? is DB connected? Check log for more information');
+            alert('Failed to add phrase, is DB connected?');
           });
       } else
         alert('Please enter a phrase in English');
