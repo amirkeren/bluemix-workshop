@@ -3,22 +3,29 @@
 The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities. The goal is to trigger an ETL operation by the creation of a new document in a Cloudant DB, then reading the document (Extract), translating the content to some target language using Watson Language Translator service (Transform) and then finally saving the result in a designated target DB (Load)
 
 # Table of contents
-1. [Deploying the CloudFoundry application on Bluemix](https://github.com/amirkeren/workshop/blob/master/README.md#deploying-the-cloudfoundry-application-on-bluemix)
-2. [Adding Cloudant NoSQL DB service to the application](https://github.com/amirkeren/workshop/blob/master/README.md#adding-cloudant-nosql-db-service-to-the-application)
-3. [Adding Watson Language Traslator service](https://github.com/amirkeren/workshop/blob/master/README.md#adding-watson-language-traslator-service)
-4. [Creating the translation mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-translation-mediator-action)
-5. [Creating the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-sequence)
-6. [Seeing it in action](https://github.com/amirkeren/workshop/blob/master/README.md#seeing-it-in-action)
-7. [Adding the DB insertion mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#adding-the-db-insertion-mediator-action)
-8. [Extending the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#extending-the-sequence)
-9. [Creating the trigger](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-trigger)
-10. [Testing the whole flow](https://github.com/amirkeren/workshop/blob/master/README.md#testing-the-whole-flow)
+1. [Preparation](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
+2. [Deploying the CloudFoundry application on Bluemix](https://github.com/amirkeren/workshop/blob/master/README.md#deploying-the-cloudfoundry-application-on-bluemix)
+3. [Adding Cloudant NoSQL DB service to the application](https://github.com/amirkeren/workshop/blob/master/README.md#adding-cloudant-nosql-db-service-to-the-application)
+4. [Adding Watson Language Traslator service](https://github.com/amirkeren/workshop/blob/master/README.md#adding-watson-language-traslator-service)
+5. [Creating the translation mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-translation-mediator-action)
+6. [Creating the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-sequence)
+7. [Seeing it in action](https://github.com/amirkeren/workshop/blob/master/README.md#seeing-it-in-action)
+8. [Adding the DB insertion mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#adding-the-db-insertion-mediator-action)
+9. [Extending the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#extending-the-sequence)
+10. [Creating the trigger](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-trigger)
+11. [Testing the whole flow](https://github.com/amirkeren/workshop/blob/master/README.md#testing-the-whole-flow)
+
+# Preparation
+
+1. [Register](https://console.ng.bluemix.net/registration) for a Bluemix account if you have not done so already
+
+2. Login by going to your [dashboard](https://console.ng.bluemix.net/dashboard/apps) and continue to create an organization name and space name
 
 # Deploying the CloudFoundry application on Bluemix
 
 We will now deploy the CloudFoundry Node.js web application so that we will have a UI to work with
 
-1. Deploy the CloudFoundry web application using the "Deploy to Bluemix" button below (you'll first need to sign in to your Bluemix account or register for one if you have yet to do so)
+1. Deploy the CloudFoundry web application using the "Deploy to Bluemix" button below (you'll first need to sign in to Jazz Hub and choose an alias)
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/amirkeren/workshop.git)
 
