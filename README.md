@@ -29,7 +29,7 @@ We will now deploy the CloudFoundry Node.js web application so that we will have
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/amirkeren/workshop.git)
 
-View your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
+Once deployment is finished, you can view your deployed application by clicking on "View Your App" or see it on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
 
 # Adding Cloudant NoSQL DB service to the application
 
