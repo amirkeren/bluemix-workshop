@@ -3,6 +3,6 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: bluemix-workshop-hulon
-  host: bluemix-workshop-hulon
+  name: bluemix-workshop
+  host: bluemix-workshop
   disk_quota: 1024M
