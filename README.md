@@ -17,27 +17,17 @@ The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabi
 
 # Preparation
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/git/meangit/ObjectStorage)
-
 1. [Register](https://console.ng.bluemix.net/registration) for a Bluemix account if you have not done so already
-
-2. Install the Bluemix CLI using the link [here](http://clis.ng.bluemix.net/ui/home.html) - verify that it's working by running `bluemix -v` in the command prompt, this should diplay the CLI version (if not working, make sure to add the bluemix executable to the PATH, instructions on how to do so can be found here for [Windows](http://www.computerhope.com/issues/ch000549.htm), [Linux](http://www.troubleshooters.com/linux/prepostpath.htm) or [Mac](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.WH9RLbZ96L8))
-
-3. Install the CloudFoundry CLI using the link [here](https://github.com/cloudfoundry/cli/releases) - verify that it's working by running `cf -v` in the command prompt, this should diplay the CLI version (if not working, see above for how to add to PATH)
-
-4. Login to Bluemix with your username and password by running `bluemix login -a https://api.ng.bluemix.net` in the command prompt
 
 # Deploying the CloudFoundry application on Bluemix
 
 We will now deploy the CloudFoundry Node.js web application so that we will have a UI to work with
 
-1. Clone this repository by running `git clone https://github.com/amirkeren/workshop.git` (if you have [git installed](https://git-scm.com/downloads)) or download it as a zip file from [here](https://github.com/amirkeren/workshop/archive/master.zip)
+1. Deploy the CloudFoundry web application using the button below - 
 
-2. Navigate to the cloned project folder (extract the file first if you downloaded the zip file)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/project/amirkeren/bluemix-workshop)
 
-3. Edit the manifest.yml file and replace *APP_NAME* with a **unique** name (it is best to use something like your *fullname-workshop* for example) and then run `cf push`
-
-You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps). If the application fails to start, try renaming your application and run `cf push` again
+You can view your deployed application on your [dashboard](https://console.ng.bluemix.net/dashboard/apps)
 
 # Adding Cloudant NoSQL DB service to the application
 
