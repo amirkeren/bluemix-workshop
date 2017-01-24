@@ -19,6 +19,8 @@ The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabi
 
 1. [Register](https://console.ng.bluemix.net/registration) for a Bluemix account if you have not done so already
 
+2. [Sign in](https://hub.jazz.net/) to Jazz Hub (IBM's Github)
+
 # Deploying the CloudFoundry application on Bluemix
 
 We will now deploy the CloudFoundry Node.js web application so that we will have a UI to work with
