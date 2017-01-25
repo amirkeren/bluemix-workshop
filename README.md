@@ -25,7 +25,7 @@ The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabi
 
 We will now deploy the CloudFoundry Node.js web application so that we will have a UI to work with
 
-1. Deploy the CloudFoundry web application using the "Deploy to Bluemix" button below (you'll first need to sign in to Jazz Hub and choose an alias)
+1. Deploy the CloudFoundry web application using the "Deploy to Bluemix" button below (you'll need to sign in to Jazz Hub and on first login you'll be prompted to choose an alias for your account)
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/amirkeren/bluemix-workshop.git)
 
