@@ -3,17 +3,17 @@
 The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabilities. The goal is to trigger an ETL operation by the creation of a new document in a Cloudant DB, then reading the document (Extract), translating the content to some target language using Watson Language Translator service (Transform) and then finally saving the result in a designated target DB (Load)
 
 # Table of contents
-1. [Preparation](https://github.com/amirkeren/workshop/blob/master/README.md#preparation)
-2. [Deploying the CloudFoundry application on Bluemix](https://github.com/amirkeren/workshop/blob/master/README.md#deploying-the-cloudfoundry-application-on-bluemix)
-3. [Adding Cloudant NoSQL DB service to the application](https://github.com/amirkeren/workshop/blob/master/README.md#adding-cloudant-nosql-db-service-to-the-application)
-4. [Adding Watson Language Traslator service](https://github.com/amirkeren/workshop/blob/master/README.md#adding-watson-language-traslator-service)
-5. [Creating the translation mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-translation-mediator-action)
-6. [Creating the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-sequence)
-7. [Seeing it in action](https://github.com/amirkeren/workshop/blob/master/README.md#seeing-it-in-action)
-8. [Adding the DB insertion mediator action](https://github.com/amirkeren/workshop/blob/master/README.md#adding-the-db-insertion-mediator-action)
-9. [Extending the sequence](https://github.com/amirkeren/workshop/blob/master/README.md#extending-the-sequence)
-10. [Creating the trigger](https://github.com/amirkeren/workshop/blob/master/README.md#creating-the-trigger)
-11. [Testing the whole flow](https://github.com/amirkeren/workshop/blob/master/README.md#testing-the-whole-flow)
+1. [Preparation](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#preparation)
+2. [Deploying the CloudFoundry application on Bluemix](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#deploying-the-cloudfoundry-application-on-bluemix)
+3. [Adding Cloudant NoSQL DB service to the application](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#adding-cloudant-nosql-db-service-to-the-application)
+4. [Adding Watson Language Traslator service](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#adding-watson-language-traslator-service)
+5. [Creating the translation mediator action](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#creating-the-translation-mediator-action)
+6. [Creating the sequence](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#creating-the-sequence)
+7. [Seeing it in action](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#seeing-it-in-action)
+8. [Adding the DB insertion mediator action](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#adding-the-db-insertion-mediator-action)
+9. [Extending the sequence](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#extending-the-sequence)
+10. [Creating the trigger](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#creating-the-trigger)
+11. [Testing the whole flow](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#testing-the-whole-flow)
 
 # Preparation
 
