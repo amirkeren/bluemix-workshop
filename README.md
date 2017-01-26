@@ -14,6 +14,7 @@ The Apache OpenWhisk starter overview demonstrates several of OpenWhisks' capabi
 9. [Extending the sequence](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#extending-the-sequence)
 10. [Creating the trigger](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#creating-the-trigger)
 11. [Testing the whole flow](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#testing-the-whole-flow)
+12. [Bonus](https://github.com/amirkeren/bluemix-workshop/blob/master/README.md#bonus)
 
 # Preparation
 
@@ -164,7 +165,7 @@ To finish the flow we will create a trigger to run the sequence. The trigger wil
 
 5. Select "Databases" on the left and the "translation" database, and you should see the translation of the phrase you entered stored in the database as a new document
 
-# Optional
+# Bonus
 
 1. Click on the translator mediator action you created and replace the target language from French ("fr") to a different language, for instance Spanish ("es") and don't forget to **Make It Live**
 
