@@ -52,7 +52,7 @@ We will now create the Language translation service that will be used to perform
 
 1. Go to the creation page of Watson Language Translator service using [this](https://console.ng.bluemix.net/catalog/services/language-translator) link or search for "translator" in the Bluemix catalog 
 
-2. Click on the "Create" button to add the new service
+2. Click on the "Create" button to add the new service (leave it *unbound*)
 
 # Creating the translation mediator action
 
