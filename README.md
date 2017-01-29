@@ -167,6 +167,4 @@ To finish the flow we will create a trigger to run the sequence. The trigger wil
 
 # Bonus
 
-1. Click on the translator mediator action you created and replace the target language from French ("fr") to a different language, for instance Spanish ("es"), and don't forget to **Make It Live**
-
-2. Now enter another new phrase and see the translation in the new language appear in the "translation" database
+Change the target translation language to a different language than French and add a new phrase to see the result
